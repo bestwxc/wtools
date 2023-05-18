@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.df4j</groupId>
     <artifactId>wtools</artifactId>
-    <version>1.0.1-SNAPSHOT</version>
+    <version>1.0.1</version>
 
     <name>wtools</name>
     <description>wtools</description>
@@ -32,7 +31,7 @@
         <connection>scm:git:git://github.com/bestwxc/wtools</connection>
         <developerConnection>scm:git:git://github.com/bestwxc/wtools</developerConnection>
         <url>https://github.com/bestwxc/wtools</url>
-        <tag>v1.0.0</tag>
+        <tag>v1.0.1</tag>
     </scm>
 
     <issueManagement>
