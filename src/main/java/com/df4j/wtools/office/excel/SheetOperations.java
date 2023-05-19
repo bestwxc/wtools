@@ -2,7 +2,7 @@ package com.df4j.wtools.office.excel;
 
 import org.apache.poi.ss.usermodel.Sheet;
 
-public interface SheetOperations {
+public interface SheetOperations extends WorkbookOperations{
 
     Sheet getOriginSheet();
 

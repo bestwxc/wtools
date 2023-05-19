@@ -8,7 +8,7 @@ import java.time.LocalDateTime;
 import java.util.Calendar;
 import java.util.Date;
 
-public interface CellOperations {
+public interface CellOperations extends RowOperations{
 
     Cell getOriginCell();
 
