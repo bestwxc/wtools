@@ -1,4 +1,4 @@
-package com.df4j.wtools.base;
+package com.df4j.wtools.base.utils;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

@@ -1,6 +1,7 @@
 package com.df4j.wtools.office.excel;
 
-import com.df4j.wtools.base.CloseUtils;
+import com.df4j.wtools.base.utils.CloseUtils;
+import com.df4j.wtools.base.utils.StringUtils;
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.apache.poi.openxml4j.opc.OPCPackage;
 import org.apache.poi.ss.usermodel.Cell;
@@ -14,7 +15,6 @@ import org.apache.poi.xssf.extractor.XSSFEventBasedExcelExtractor;
 import org.apache.poi.xssf.model.StylesTable;
 import org.apache.poi.xssf.streaming.SXSSFWorkbook;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
-import org.springframework.util.StringUtils;
 
 import java.io.File;
 import java.io.FileInputStream;
