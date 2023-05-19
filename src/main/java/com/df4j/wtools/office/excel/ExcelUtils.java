@@ -1,5 +1,6 @@
 package com.df4j.wtools.office.excel;
 
+import com.df4j.wtools.base.exception.CommonException;
 import com.df4j.wtools.base.utils.CloseUtils;
 import com.df4j.wtools.base.utils.StringUtils;
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
@@ -71,7 +72,7 @@ public class ExcelUtils {
         try {
             return new XSSFWorkbook(path);
         } catch (Exception e) {
-            throw new RuntimeException("read xssf fail. path: " + path, e);
+            throw new CommonException("read xssf fail. path: " + path, e);
         }
     }
 
@@ -80,7 +81,7 @@ public class ExcelUtils {
             InputStream inputStream = new FileInputStream(path);
             return new HSSFWorkbook(inputStream);
         } catch (Exception e) {
-            throw new RuntimeException("read hssf fail. path: " + path, e);
+            throw new CommonException("read hssf fail. path: " + path, e);
         }
     }
 
@@ -172,7 +173,7 @@ public class ExcelUtils {
             out = new FileOutputStream(path);
             workbook.write(out);
         } catch (Exception e) {
-            throw new RuntimeException(e);
+            throw new CommonException(e);
         } finally {
             CloseUtils.close(out);
         }
@@ -201,7 +202,7 @@ public class ExcelUtils {
                 }
             }
         } catch (Exception e) {
-            throw new RuntimeException("handle excel faile, file: " + file.getAbsolutePath(), e);
+            throw new CommonException("handle excel faile, file: " + file.getAbsolutePath(), e);
         }
     }
 }
