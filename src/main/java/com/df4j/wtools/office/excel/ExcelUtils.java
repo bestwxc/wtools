@@ -1,10 +1,12 @@
 package com.df4j.wtools.office.excel;
 
 import com.df4j.wtools.base.CloseUtils;
+import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
+import org.apache.poi.xssf.streaming.SXSSFWorkbook;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.springframework.util.StringUtils;
 
@@ -16,6 +18,13 @@ public class ExcelUtils {
         return new XSSFWorkbook();
     }
 
+    public static HSSFWorkbook createHSSFWorkbook() {
+        return new HSSFWorkbook();
+    }
+
+    public static SXSSFWorkbook createSXSSFWorkbook(int rowAccessWindowSize) {
+        return new SXSSFWorkbook(rowAccessWindowSize);
+    }
 
     /**
      * Get or create sheet by name.
@@ -77,6 +86,18 @@ public class ExcelUtils {
 
     public static WorkbookOperations xssf() {
         return workbook(createXSSFWorkbook());
+    }
+
+    public static WorkbookOperations hssf() {
+        return workbook(createHSSFWorkbook());
+    }
+
+    public static WorkbookOperations sxssf() {
+        return sxssf(100);
+    }
+
+    public static WorkbookOperations sxssf(int rowAccessWindowSize) {
+        return workbook(createSXSSFWorkbook(rowAccessWindowSize));
     }
 
     public static void write(Workbook workbook, String path) {
