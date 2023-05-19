@@ -4,7 +4,7 @@
 
     <groupId>com.df4j</groupId>
     <artifactId>wtools</artifactId>
-    <version>1.0.2-SNAPSHOT</version>
+    <version>1.0.2</version>
 
     <name>wtools</name>
     <description>wtools</description>
@@ -31,7 +31,7 @@
         <connection>scm:git:git://github.com/bestwxc/wtools</connection>
         <developerConnection>scm:git:git://github.com/bestwxc/wtools</developerConnection>
         <url>https://github.com/bestwxc/wtools</url>
-        <tag>v1.0.0</tag>
+        <tag>v1.0.2</tag>
     </scm>
 
     <issueManagement>
