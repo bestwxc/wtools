@@ -125,4 +125,46 @@ public class CellOperationsImpl implements CellOperations, RowOperations, SheetO
         this.cell.setCellValue(value);
         return this;
     }
+
+    @Override
+    public CellOperations setAsActiveCell() {
+        this.cell.setAsActiveCell();
+        return this;
+    }
+
+    @Override
+    public CellOperations setCellComment(Comment comment) {
+        this.cell.setCellComment(comment);
+        return this;
+    }
+
+    @Override
+    public CellOperations setHyperlink(Hyperlink link) {
+        this.cell.setHyperlink(link);
+        return this;
+    }
+
+    @Override
+    public CellOperations setBlank() {
+        this.cell.setBlank();
+        return this;
+    }
+
+    @Override
+    public CellOperations setCellErrorValue(byte value) {
+        this.cell.setCellErrorValue(value);
+        return this;
+    }
+
+    @Override
+    public CellOperations setCellFormula(String formula) {
+        this.cell.setCellFormula(formula);
+        return this;
+    }
+
+    @Override
+    public CellOperations setCellStyle(CellStyle style) {
+        this.cell.setCellStyle(style);
+        return this;
+    }
 }
